@@ -1,0 +1,360 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+}
+body{
+	font-family: 'PT Serif', serif;
+	font-size: 14px;
+	line-height: 19px;
+	color: #656B6F;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+pre{
+	padding: 0;
+	margin:0;
+}
+.header {
+	background:url(../img/Overlay.png), url(../img/Image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header__inner{
+	padding: 35px 0 89px;
+}
+.container {
+	max-width: 1007px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 147px;
+}
+.menu {
+	display: flex;
+}
+.menu__list-item + .menu__list-item{
+	margin-left: 36px;
+}
+.header__content {
+	text-align: center;
+	color: #fff;
+
+}
+.subtitle,.menu{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #3C3D41;
+	text-align: center;
+}
+.header__subtitle{
+	margin-bottom: 20px;
+	color: #E3F1FF;
+}
+.header__slogan {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 82px;
+	line-height: 85px;
+	letter-spacing: -2px;
+	margin-bottom: 38px;
+}
+.header__text{
+	font-size: 20px;
+	line-height: 26px;
+	opacity: 0.7;
+	max-width: 539px; /*уточнить по поводу rem*/
+	margin: 0 auto;
+	margin-bottom: 81px;
+}
+.header__image {
+	margin-bottom: 20px;
+}
+.header__image-descr {
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 0.5;
+}
+
+.menu__list-link{
+	color: #E3F1FF;
+	padding: 5px;
+}
+.header__button {
+	background: none;
+	outline: none;
+	border: 1px solid rgba(238, 238, 238, .3);
+	padding: 16px 41px 19px;
+	border-radius: 40px;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #fff;
+	cursor: pointer;
+}
+.directions{
+	text-align: center;
+	background: #E3F1FF;
+}
+.direcitos__subtitle{
+	padding-top: 110px;
+	margin-bottom: 20px;
+	color: #3C3D41;
+}
+.title{
+	font-size: 52px;
+	line-height: 55px;
+	font-weight: 700;
+	color: #3C3D41;
+	letter-spacing: -2px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.directions__navigation{
+	margin-bottom: 60px;
+}
+.navigation__link, .overlay__btn{
+	font-size: 10px;
+	line-height: 10px;
+	color: #3C3D41;
+}
+.navigation__link + .navigation__link{
+	margin-left: 36px;
+}
+.navigation__link{
+	transition: .4s;
+}
+
+.navigation__link:hover{
+	background: #656B6F;
+	padding: 5px 25px 8px;
+	color: #E3F1FF; 
+	border-radius: 40px;
+}
+
+.projects{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 300px;
+	grid-gap: 20px;
+	padding-bottom: 130px;
+}
+.projects__item img{
+	width: 100%;
+	height: 100%;
+}
+.overlay__title{
+	font-size: 22px;
+	line-height: 22px;
+	color: #E3F1FF;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	padding: 80px 51px 0;
+	margin-bottom: 40px;
+}
+.projects__item{
+	position: relative;
+}
+.projects__overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(60, 61, 65, .9);
+	opacity: 0;
+	transition: .4s;
+}
+.overlay__descr{
+	color: #E3F1FF;
+	opacity: .7;
+	margin-bottom: 54px;
+}
+.overlay__btn{
+	padding: 17px 25px 18px 27px;
+	background: #2E71F0;
+	color: #E3F1FF;
+	border-radius: 40px; 
+}
+/*
+.projects__item:hover .projects__overlay{
+	opacity: 1;
+}
+*/
+.expirience__subtitle{
+	padding-top: 110px;
+	margin-bottom: 71px; 
+	color: #3C3D41;
+	text-align: center;
+}
+.expirience__logos{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 142px;
+}
+.portfolio{
+	background-color: #E3F1FF;
+	text-align: center;
+}
+.portfolio__subtitle{
+	padding-top: 110px;
+	margin-bottom: 20px;
+}
+.portfolio__title{
+	margin-bottom: 90px;
+}
+.portfolio__best{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 100px;
+	padding-bottom: 151px;
+}
+.best__item{
+	transition: .4s;
+}
+.best__image{
+	margin-bottom: 21px;
+	position: relative;
+}
+.best__subtitle{
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+.best__descr{
+	color: #656B6F;
+}
+.best__item:hover{
+	background: #fff;
+	box-shadow: 0px 5px 20px rgba(186, 186, 186, 0.522815);
+	border-radius: 4px;
+	padding: 30px 40px 41px;
+	margin: -30px -40px -41px;
+}
+.best__eye{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.team__item{
+	text-align: center;
+}
+.team__social{
+	display: flex;
+	justify-content: space-between;
+	max-width: 191px;
+	margin: 0 auto;
+	padding-bottom: 68px;
+	opacity: 0;
+	transition: .4s;
+	display: none;
+}
+.team__name{
+	font-size: 32px;
+	line-height: 39px;
+	font-weight: 700px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 22px;
+	color: #3C3D41;
+	opacity: 0;
+	transition: .4s;
+	display: none;
+}
+.team__descr{
+	margin-bottom: 22px;
+	max-width: 313px;
+	text-align: center;
+	margin: 0 auto;
+	opacity: 0;
+	transition: .4s;
+	display: none;
+}
+.team__subtitle{
+	padding-top: 110px;
+	margin-bottom: 69px;
+}
+.slick-track{
+	display: flex;
+	align-items: baseline;
+}
+.slick-slide{
+	margin: 50px 0 auto ;
+}
+.slick-list{
+	overflow: hidden;
+}
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	background-color: transparent;
+	width: 13px;
+	height: 24px;
+	z-index: 10;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+.team__slider{
+	position: relative;
+	width: 100%;
+}
+.team__userpic{
+	opacity: 0.4;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 22px;
+	transition: .2s;
+}
+.team__slider .slick-prev{
+	top: 25%;
+	transform: translateY(-25%);
+	left: 34%;
+	background: url(../img/Left.svg) 0 0 / 100% no-repeat;
+}
+.team__slider .slick-next{
+	top: 25%;
+	transform: translateY(-25%);
+	right: 34%;
+	background: url(../img/Arrow.svg) 0 0 / 100% no-repeat;
+}
+
+
+/*--------------------------------------------НАСТРОЙКА ЦЕНТРАЛЬНОГО СЛАЙДА--------------------------------------------*/
+.slick-center .team__name{
+	opacity: 1;	
+	display: block;
+}
+.slick-center{
+	margin: 0;
+}
+.slick-center .team__descr{
+	opacity: 1;	
+	display: block;
+}
+.slick-center .team__social{
+	opacity: 1;
+	display: flex;
+}
+.slick-center .team__userpic{
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
